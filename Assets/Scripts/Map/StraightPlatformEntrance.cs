@@ -15,7 +15,7 @@ public class StraightPlatformEntrance : MonoBehaviour
                 Instantiate(Enemy1,SpawnPoint1.position, Quaternion.identity);
             }
             if(Random.value < 0.5f){
-                Instantiate(Enemy1,SpawnPoint1.position, Quaternion.identity);
+                Instantiate(Enemy1,SpawnPoint2.position, Quaternion.identity);
             }
         }
     }
