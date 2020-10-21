@@ -17,7 +17,6 @@ public class BasicEnemyScript : MonoBehaviour
         transform.Translate(Vector2.left*step);
         if (transform.position.x < -20){
             Destroy(gameObject);
-            TestGenerator.totalPlatform-=1;
         } 
     }
 

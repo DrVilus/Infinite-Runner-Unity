@@ -60,7 +60,6 @@ public class PlayerControl : MonoBehaviour
             rigidbody2d.velocity= new Vector2(0,0);
             fallSpeedTrig=false;
             isJumping = false;
-            Debug.Log("Head Hit");
         }else 
         if(Input.GetButtonUp("Jump")){//Is Jump button reelased?
             if(fallSpeedTrig==true && isJumping == true){

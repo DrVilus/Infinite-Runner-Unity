@@ -14,16 +14,17 @@ public class StraightGround : MonoBehaviour
         if(myBool==true){
             Instantiate(Enemy1,SpawnPoint.position, Quaternion.identity);
         }
+
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         float step = GlobalSettings.speed * Time.deltaTime;
         transform.Translate(Vector2.left*step);
         if (transform.position.x < -50){
+            GlobalSettings.totalPlatformGenerated--;
             Destroy(gameObject);
-            TestGenerator.totalPlatform-=1;
         } 
 
 

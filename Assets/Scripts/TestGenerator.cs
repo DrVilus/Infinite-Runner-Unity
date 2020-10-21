@@ -11,14 +11,17 @@ public class TestGenerator : MonoBehaviour
     [SerializeField] private Transform levelPartStart = null;
     private bool upPlatformStarted = false;
     Transform lastLevelPartTransform;
-    // Start is called before the first frame update
 
-    static public int totalPlatform=0;
+    // Start is called before the first frame update
     void Start()
     {
-        
         lastLevelPartTransform = Spawn(Straight,levelPartStart.Find("EndPosition").position);
         // lastLevelPartTransform = Spawn(lastLevelPartTransform.Find("EndPosition").position);
+        while(GlobalSettings.totalPlatformGenerated<GlobalSettings.maxPlatformGenerated){
+            generatePlatforms();
+            GlobalSettings.totalPlatformGenerated++;
+        }
+
     }
 
     private Transform Spawn(Transform platform, Vector3 spawnPosition){
@@ -29,8 +32,14 @@ public class TestGenerator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        while(totalPlatform<5){
-            if(Random.value < 0.5f && upPlatformStarted==false){
+        if(GlobalSettings.totalPlatformGenerated<GlobalSettings.maxPlatformGenerated){
+            generatePlatforms();
+            GlobalSettings.totalPlatformGenerated++;
+        }
+    }
+
+    void generatePlatforms(){
+        if(Random.value < 0.5f && upPlatformStarted==false){
                 lastLevelPartTransform = Spawn(Straight,lastLevelPartTransform.Find("EndPosition").position);
             }else{
                 if(upPlatformStarted==false){
@@ -46,8 +55,5 @@ public class TestGenerator : MonoBehaviour
                 }
                 
             }
-            
-            totalPlatform++;
-        }
     }
 }
