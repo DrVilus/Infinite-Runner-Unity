@@ -6,6 +6,8 @@ public class TestGenerator : MonoBehaviour
 {
     [SerializeField] private Transform Straight = null;
     [SerializeField] private Transform StraightPlatformEntrance = null;
+    [SerializeField] private Transform StraightPlatformMid = null;
+    [SerializeField] private Transform StraightPlatformEnd = null;
     [SerializeField] private Transform levelPartStart = null;
     private bool upPlatformStarted = false;
     Transform lastLevelPartTransform;
@@ -16,8 +18,6 @@ public class TestGenerator : MonoBehaviour
     {
         
         lastLevelPartTransform = Spawn(Straight,levelPartStart.Find("EndPosition").position);
-        // lastLevelPartTransform = Spawn(lastLevelPartTransform.Find("EndPosition").position);
-        // lastLevelPartTransform = Spawn(lastLevelPartTransform.Find("EndPosition").position);
         // lastLevelPartTransform = Spawn(lastLevelPartTransform.Find("EndPosition").position);
     }
 
@@ -30,10 +30,21 @@ public class TestGenerator : MonoBehaviour
     void Update()
     {
         while(totalPlatform<5){
-            if(Random.value < 0.5f ){
+            if(Random.value < 0.5f && upPlatformStarted==false){
                 lastLevelPartTransform = Spawn(Straight,lastLevelPartTransform.Find("EndPosition").position);
             }else{
-                lastLevelPartTransform = Spawn(StraightPlatformEntrance,lastLevelPartTransform.Find("EndPosition").position);
+                if(upPlatformStarted==false){
+                    lastLevelPartTransform = Spawn(StraightPlatformEntrance,lastLevelPartTransform.Find("EndPosition").position);
+                    upPlatformStarted=true;
+                }else{
+                    if(Random.value < 0.5f){
+                        lastLevelPartTransform = Spawn(StraightPlatformMid,lastLevelPartTransform.Find("EndPosition").position);
+                    }else{
+                        lastLevelPartTransform = Spawn(StraightPlatformEnd,lastLevelPartTransform.Find("EndPosition").position);
+                        upPlatformStarted = false;
+                    }
+                }
+                
             }
             
             totalPlatform++;
