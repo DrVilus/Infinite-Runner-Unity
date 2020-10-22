@@ -15,6 +15,7 @@ public class GlobalSettings : MonoBehaviour
     static public float currentStamina = 100;
 
     static public bool slideEnabled=false;
+    static public float panelSpeedBoost = 4f;
     
     static public int score = 0;
     

@@ -8,13 +8,19 @@ public class StraightGround : MonoBehaviour
     // Start is called before the first frame update
     [SerializeField] private Transform Enemy1 = null;
     [SerializeField] private Transform dashPanel = null;
+    [SerializeField] private Transform crystal = null;
     [SerializeField] private Transform SpawnPoint = null;
+    [SerializeField] private Transform CrystalSpawnPoint = null;
     void Start()
     {
         if(Random.value < 0.5f){
             Instantiate(Enemy1,SpawnPoint.position, Quaternion.identity);
-        }else if((Random.value < 0.5f)){
+        }else if(Random.value < 0.5f){
             Instantiate(dashPanel,SpawnPoint.position, Quaternion.identity);
+        }
+
+        if(Random.value < 0.9f){
+            Instantiate(crystal,CrystalSpawnPoint.position, Quaternion.identity);
         }
 
     }

@@ -29,6 +29,7 @@ public class BasicEnemyScript : MonoBehaviour
             if(GlobalSettings.slideEnabled){
                 GlobalSettings.slideEnabled=false;
                 GlobalSettings.score+=100;
+                GlobalSettings.speed-=GlobalSettings.panelSpeedBoost;
             }else{
                 GlobalSettings.currentHealth-=damage;
             }

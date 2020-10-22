@@ -18,6 +18,7 @@ public class PlayerStatus : MonoBehaviour
     [SerializeField] TextMeshProUGUI score;
 
     float speedTimer = 0f;
+    int speedTimerScoreCheck=0;
 
     void Start()
     {
@@ -39,6 +40,15 @@ public class PlayerStatus : MonoBehaviour
             GlobalSettings.speed+=0.2f;
         }else{
             speedTimer+=0.002f;
+        }
+        if(speedTimerScoreCheck==10){
+            GlobalSettings.score+=1;
+            if(GlobalSettings.slideEnabled==true){
+                GlobalSettings.score+=1;
+            }
+            speedTimerScoreCheck=0;
+        }else{
+            speedTimerScoreCheck+=1;
         }
     }
 
