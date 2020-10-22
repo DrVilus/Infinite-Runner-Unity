@@ -26,7 +26,12 @@ public class BasicEnemyScript : MonoBehaviour
         if(other.gameObject.tag == "Player"){
             Debug.Log("Player got hit");
             Destroy(this.gameObject);
-            GlobalSettings.currentHealth-=damage;
+            if(GlobalSettings.slideEnabled){
+                GlobalSettings.slideEnabled=false;
+                GlobalSettings.score+=100;
+            }else{
+                GlobalSettings.currentHealth-=damage;
+            }
         }
 
        

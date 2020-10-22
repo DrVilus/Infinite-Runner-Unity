@@ -14,6 +14,9 @@ public class GlobalSettings : MonoBehaviour
     static public float maxStamina = 100;
     static public float currentStamina = 100;
 
+    static public bool slideEnabled=false;
+    
+    static public int score = 0;
     
     static public int maxPlatformGenerated = 5;//the maximum platform that will be generated
 

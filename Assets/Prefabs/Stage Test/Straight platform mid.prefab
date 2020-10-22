@@ -868,6 +868,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Enemy1: {fileID: 3010568515498546323, guid: f26804867b6980041a495a4dd6233e88, type: 3}
+  dashPanel: {fileID: 7410843199003493757, guid: a2c5d21b7b490f5449988f32da528c15, type: 3}
   SpawnPoint1: {fileID: 4043971309579933329}
   SpawnPoint2: {fileID: 4992246046501142801}
 --- !u!1 &4992246046501142800

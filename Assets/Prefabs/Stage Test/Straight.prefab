@@ -91,6 +91,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Enemy1: {fileID: 3010568515498546323, guid: f26804867b6980041a495a4dd6233e88, type: 3}
+  dashPanel: {fileID: 7410843199003493757, guid: a2c5d21b7b490f5449988f32da528c15, type: 3}
   SpawnPoint: {fileID: 2825287170844927777}
 --- !u!1 &1371428403720025007
 GameObject:

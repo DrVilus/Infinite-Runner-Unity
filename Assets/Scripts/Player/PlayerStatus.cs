@@ -14,6 +14,11 @@ public class PlayerStatus : MonoBehaviour
     [SerializeField] TextMeshProUGUI staminaText;
     [SerializeField] Slider staminaSlider;
 
+    [SerializeField] TextMeshProUGUI slideText;
+    [SerializeField] TextMeshProUGUI score;
+
+    float speedTimer = 0f;
+
     void Start()
     {
         int currentHealth = GlobalSettings.maxHealth;
@@ -29,6 +34,12 @@ public class PlayerStatus : MonoBehaviour
     void FixedUpdate()
     {
         staminaReduce();
+        if(speedTimer>1f){
+            speedTimer=0f;
+            GlobalSettings.speed+=0.2f;
+        }else{
+            speedTimer+=0.002f;
+        }
     }
 
     void updateUI(){
@@ -37,6 +48,10 @@ public class PlayerStatus : MonoBehaviour
 
         staminaText.text = "Stamina = " + GlobalSettings.currentStamina;
         staminaSlider.value = GlobalSettings.currentStamina/GlobalSettings.maxStamina;
+
+        slideText.text = "Slider " + GlobalSettings.slideEnabled;
+
+        score.text = "Score = " + GlobalSettings.score;
     }
 
     void staminaReduce(){
