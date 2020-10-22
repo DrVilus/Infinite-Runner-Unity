@@ -12,6 +12,7 @@ public class TestGenerator : MonoBehaviour
     private bool upPlatformStarted = false;
     Transform lastLevelPartTransform;
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -36,6 +37,7 @@ public class TestGenerator : MonoBehaviour
             generatePlatforms();
             GlobalSettings.totalPlatformGenerated++;
         }
+
     }
 
     void generatePlatforms(){

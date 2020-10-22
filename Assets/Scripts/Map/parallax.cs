@@ -9,7 +9,7 @@ public class parallax : MonoBehaviour
     /// <summary>
     /// Scrolling speed
     /// </summary>
-    public Vector2 speed = new Vector2(10, 10);
+    Vector2 speed = new Vector2(10, 10);
 
     /// <summary>
     /// Moving direction
@@ -64,6 +64,7 @@ public class parallax : MonoBehaviour
 
     void Update()
     {
+        speed.x = GlobalSettings.speed/3f;
         // Movement
         Vector3 movement = new Vector3(
           speed.x * direction.x,

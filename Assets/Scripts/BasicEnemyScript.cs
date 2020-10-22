@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BasicEnemyScript : MonoBehaviour
 {
+    [SerializeField] int damage;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +26,7 @@ public class BasicEnemyScript : MonoBehaviour
         if(other.gameObject.tag == "Player"){
             Debug.Log("Player got hit");
             Destroy(this.gameObject);
-            GlobalSettings.pHealth-=1;
+            GlobalSettings.currentHealth-=damage;
         }
 
        

@@ -43,11 +43,11 @@
      <Compile Include="Assets\Scripts\Map\EmptyGroundBase.cs" />
      <Compile Include="Assets\Scripts\BasicEnemyScript.cs" />
      <Compile Include="Assets\Scripts\TestGenerator.cs" />
-     <Compile Include="Assets\Scripts\Player\HealthUI.cs" />
-     <Compile Include="Assets\Scripts\Player\PlayerControl.cs" />
-     <Compile Include="Assets\Scripts\Map\parallax.cs" />
      <Compile Include="Assets\Scripts\Map\StraightPlatformMid.cs" />
+     <Compile Include="Assets\Scripts\Player\PlayerControl.cs" />
      <Compile Include="Assets\Scripts\Map\StraightPlatformEnd.cs" />
+     <Compile Include="Assets\Scripts\Map\parallax.cs" />
+     <Compile Include="Assets\Scripts\Player\PlayerStatus.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

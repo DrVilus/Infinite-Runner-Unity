@@ -30,7 +30,7 @@ public class PlayerControl : MonoBehaviour
 
     void fixPosition(){
         if(this.gameObject.transform.position.x < start_X_position){
-            transform.Translate(Vector3.right * Time.deltaTime * 3);
+            transform.Translate(Vector3.right * Time.deltaTime * 5);
         }
     }
 
