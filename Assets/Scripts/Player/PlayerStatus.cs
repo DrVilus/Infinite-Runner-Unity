@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
-
+using UnityEngine.SceneManagement;
 
 //Control stats like healths and stuff, variable located in global settings since i'm lazy asf
 public class PlayerStatus : MonoBehaviour
@@ -29,7 +29,18 @@ public class PlayerStatus : MonoBehaviour
     void Update()
     {
         updateUI();
-        
+         
+ if(GlobalSettings.currentHealth==0){
+        GlobalSettings.currentHealth=GlobalSettings.maxHealth;
+                GlobalSettings.currentStamina=GlobalSettings.maxStamina;
+
+        SceneManager.LoadScene(2);
+    }else if(GlobalSettings.currentStamina==0){
+                GlobalSettings.currentHealth=GlobalSettings.maxHealth;
+        GlobalSettings.currentStamina=GlobalSettings.maxStamina;
+        SceneManager.LoadScene(2);
+}
+    
     }
 
     void FixedUpdate()
@@ -51,7 +62,7 @@ public class PlayerStatus : MonoBehaviour
             speedTimerScoreCheck+=1;
         }
     }
-
+ 
     void updateUI(){
         healthText.text = "Health = " + GlobalSettings.currentHealth;
         healthSlider.value = (float)GlobalSettings.currentHealth/(float)GlobalSettings.maxHealth;
@@ -62,8 +73,10 @@ public class PlayerStatus : MonoBehaviour
         slideText.text = "Slider " + GlobalSettings.slideEnabled;
 
         score.text = "Score = " + GlobalSettings.score;
+      
+   
+    
     }
-
     void staminaReduce(){
         GlobalSettings.currentStamina -= 0.03f;
     }

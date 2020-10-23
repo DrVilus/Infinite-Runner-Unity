@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class GlobalSettings : MonoBehaviour
 {
@@ -10,7 +12,7 @@ public class GlobalSettings : MonoBehaviour
 
     static public int maxHealth = 1000; // Self Explanatory, it's player max health
     static public int currentHealth = 1000;// always set the same as max health before play
-
+    
     static public float maxStamina = 100;
     static public float currentStamina = 100;
 

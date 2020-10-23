@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class PlayerControl : MonoBehaviour
 {
     [SerializeField] private LayerMask platformsLayerMask;
@@ -13,6 +13,7 @@ public class PlayerControl : MonoBehaviour
     private Rigidbody2D rigidbody2d;
     private BoxCollider2D boxCollider2d;
     private double start_X_position = 0;
+    public Animator animator;
     void Start()
     {
         rigidbody2d = transform.GetComponent<Rigidbody2D>();
@@ -25,6 +26,14 @@ public class PlayerControl : MonoBehaviour
     {
         Jump();
         fixPosition();
+        if(isJumping==true){
+            animator.SetBool("isJumping",true);
+        }else{
+            animator.SetBool("isJumping",false);
+        }
+        if(Input.GetKeyDown("p")){
+            SceneManager.LoadScene(0);
+        }
         
     }
 
