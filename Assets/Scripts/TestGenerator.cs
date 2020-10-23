@@ -31,7 +31,7 @@ public class TestGenerator : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if(GlobalSettings.totalPlatformGenerated<GlobalSettings.maxPlatformGenerated){
             generatePlatforms();

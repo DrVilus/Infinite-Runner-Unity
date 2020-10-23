@@ -48,3 +48,14 @@ The following packages were updated:
   com.unity.2d.animation from version 4.2.4 to 4.2.5
   com.unity.2d.psdimporter from version 3.1.4 to 3.1.5
   com.unity.2d.spriteshape from version 4.1.1 to 4.1.3
+
+=== Fri Oct 23 07:04:55 2020
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were updated:
+  com.unity.2d.animation from version 4.2.5 to 4.2.6
+  com.unity.2d.psdimporter from version 3.1.5 to 3.1.6
+  com.unity.2d.spriteshape from version 4.1.3 to 4.1.4
+  com.unity.ide.vscode from version 1.2.1 to 1.2.2
