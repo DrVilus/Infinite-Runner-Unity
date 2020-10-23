@@ -26,7 +26,7 @@ public class StraightPlatformEntrance : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
         float step = GlobalSettings.speed * Time.deltaTime;
         transform.Translate(Vector2.left*step);
