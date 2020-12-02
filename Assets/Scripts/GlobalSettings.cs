@@ -23,7 +23,7 @@ public class GlobalSettings : MonoBehaviour
     
     static public int maxPlatformGenerated = 5;//the maximum platform that will be generated
 
-    static public int totalPlatformGenerated = 0;//no touch, stays at 0, idk what else to do lol
+    static public int totalPlatformGenerated = 0;//no touch, stays at 0, reset to 0 at every level start
 
     
 }

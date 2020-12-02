@@ -16,6 +16,7 @@ public class TestGenerator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        GlobalSettings.totalPlatformGenerated = 0;
         lastLevelPartTransform = Spawn(Straight,levelPartStart.Find("EndPosition").position);
         // lastLevelPartTransform = Spawn(lastLevelPartTransform.Find("EndPosition").position);
         while(GlobalSettings.totalPlatformGenerated<GlobalSettings.maxPlatformGenerated){
