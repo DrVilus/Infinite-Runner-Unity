@@ -32,11 +32,11 @@ public class PlayerStatus : MonoBehaviour
          
  if(GlobalSettings.currentHealth==0){
         GlobalSettings.currentHealth=GlobalSettings.maxHealth;
-                GlobalSettings.currentStamina=GlobalSettings.maxStamina;
-
+        GlobalSettings.currentStamina=GlobalSettings.maxStamina;
+        GlobalSettings.score = 0;
         SceneManager.LoadScene(2);
     }else if(GlobalSettings.currentStamina==0){
-                GlobalSettings.currentHealth=GlobalSettings.maxHealth;
+        GlobalSettings.currentHealth=GlobalSettings.maxHealth;
         GlobalSettings.currentStamina=GlobalSettings.maxStamina;
         SceneManager.LoadScene(2);
 }
