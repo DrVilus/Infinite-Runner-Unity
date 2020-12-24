@@ -13,12 +13,14 @@ public class PlayerControl : MonoBehaviour
     private Rigidbody2D rigidbody2d;
     private BoxCollider2D boxCollider2d;
     private double start_X_position = 0;
-    public Animator animator;
+    private Animator playerAnimation;
+
     void Start()
     {
         rigidbody2d = transform.GetComponent<Rigidbody2D>();
         boxCollider2d = transform.GetComponent<BoxCollider2D>();
         start_X_position = this.gameObject.transform.position.x;
+        playerAnimation = this.transform.GetChild(0).GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -27,13 +29,28 @@ public class PlayerControl : MonoBehaviour
         Jump();
         fixPosition();
         if(isJumping==true){
-            animator.SetBool("isJumping",true);
+            playerAnimation.SetBool("isJumping",true);
         }else{
-            animator.SetBool("isJumping",false);
+            playerAnimation.SetBool("isJumping",false);
         }
+
+        if (rigidbody2d.velocity.y < -0.1 || rigidbody2d.velocity.y > 0.1)
+        {
+            playerAnimation.SetBool("inAir",true);
+        }
+
+        if(touchCheck(Vector2.down, 0.1f)){
+            playerAnimation.SetBool("inAir",false);
+        }
+
         if(Input.GetKeyDown("p")){
             SceneManager.LoadScene(0);
         }
+        
+    }
+
+    void FixedUpdate()
+    {
         
     }
 
