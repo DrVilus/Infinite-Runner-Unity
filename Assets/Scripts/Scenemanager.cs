@@ -8,7 +8,9 @@ public class Scenemanager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        GlobalSettings.currentHealth=GlobalSettings.maxHealth;
+        GlobalSettings.currentStamina=GlobalSettings.maxStamina;
+        GlobalSettings.score = 0;
     }
     public void stage1(){
         SceneManager.LoadScene(1);

@@ -1510,7 +1510,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -2
   m_Sprite: {fileID: 21300000, guid: 30ccd7bbf23a782409895a40edba6cb0, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.371529, g: 0.43014395, b: 0.6509434, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2245,7 +2245,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1390808737}
-  - component: {fileID: 1390808736}
+  - component: {fileID: 1390808738}
   m_Layer: 0
   m_Name: Level Generator
   m_TagString: Untagged
@@ -2253,23 +2253,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1390808736
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1390808735}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6115b4e92f501d34faba8d265f978706, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Straight: {fileID: 1371428403438728185, guid: 76b0d2dcf2446394eb02222337a2ef27, type: 3}
-  StraightPlatformEntrance: {fileID: 6487638575329790425, guid: 3d920c52014c28142b72f9ea63163328, type: 3}
-  StraightPlatformMid: {fileID: 874321825798324809, guid: 2711433a3f2a9e44bac533eb3465c52a, type: 3}
-  StraightPlatformEnd: {fileID: 5639043747381548810, guid: 0d0f3bdb4d2b80a43a5993462c0b0b03, type: 3}
-  levelPartStart: {fileID: 1371428402915295087}
 --- !u!4 &1390808737
 Transform:
   m_ObjectHideFlags: 0
@@ -2284,6 +2267,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1390808738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1390808735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06ae458ab1c488940ab416cb709696a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Straight: {fileID: 1371428403438728185, guid: 76b0d2dcf2446394eb02222337a2ef27, type: 3}
+  StraightPlatformEntrance: {fileID: 6487638575329790425, guid: 3d920c52014c28142b72f9ea63163328, type: 3}
+  StraightPlatformMid: {fileID: 874321825798324809, guid: 2711433a3f2a9e44bac533eb3465c52a, type: 3}
+  StraightPlatformEnd: {fileID: 5639043747381548810, guid: 0d0f3bdb4d2b80a43a5993462c0b0b03, type: 3}
+  levelPartStart: {fileID: 1371428402915295087}
+  portal: {fileID: 1371428403438728185, guid: 2ca6d85073813f040b187b58bff23fd2, type: 3}
+  score_to_next_level: 9999
 --- !u!1 &1619143026
 GameObject:
   m_ObjectHideFlags: 0
@@ -3097,7 +3099,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8504982515848582070, guid: e2cfd01a0d8c0174bb8e76447b12089a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 8504982515848582070, guid: e2cfd01a0d8c0174bb8e76447b12089a, type: 3}
       propertyPath: m_LocalRotation.x

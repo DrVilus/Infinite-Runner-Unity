@@ -9,8 +9,12 @@ public class TestGenerator : MonoBehaviour
     [SerializeField] private Transform StraightPlatformMid = null;
     [SerializeField] private Transform StraightPlatformEnd = null;
     [SerializeField] private Transform levelPartStart = null;
+
+    [SerializeField] private Transform portal = null;
     private bool upPlatformStarted = false;
     Transform lastLevelPartTransform;
+
+    public int score_to_next_level = 0;
 
 
     // Start is called before the first frame update
@@ -44,19 +48,27 @@ public class TestGenerator : MonoBehaviour
     void generatePlatforms(){
         if(Random.value < 0.5f && upPlatformStarted==false){
                 lastLevelPartTransform = Spawn(Straight,lastLevelPartTransform.Find("EndPosition").position);
+        }else{
+            if(upPlatformStarted==false){
+                lastLevelPartTransform = Spawn(StraightPlatformEntrance,lastLevelPartTransform.Find("EndPosition").position);
+                upPlatformStarted=true;
             }else{
-                if(upPlatformStarted==false){
-                    lastLevelPartTransform = Spawn(StraightPlatformEntrance,lastLevelPartTransform.Find("EndPosition").position);
-                    upPlatformStarted=true;
+                if(Random.value < 0.5f){
+                    lastLevelPartTransform = Spawn(StraightPlatformMid,lastLevelPartTransform.Find("EndPosition").position);
                 }else{
-                    if(Random.value < 0.5f){
-                        lastLevelPartTransform = Spawn(StraightPlatformMid,lastLevelPartTransform.Find("EndPosition").position);
-                    }else{
-                        lastLevelPartTransform = Spawn(StraightPlatformEnd,lastLevelPartTransform.Find("EndPosition").position);
-                        upPlatformStarted = false;
-                    }
+                    lastLevelPartTransform = Spawn(StraightPlatformEnd,lastLevelPartTransform.Find("EndPosition").position);
+                    upPlatformStarted = false;
                 }
-                
+            }  
+        }
+
+        if(GlobalSettings.score >= score_to_next_level){
+            if(upPlatformStarted == true){
+                lastLevelPartTransform = Spawn(StraightPlatformEnd,lastLevelPartTransform.Find("EndPosition").position);
+                upPlatformStarted=true;
             }
+            lastLevelPartTransform = Spawn(portal,lastLevelPartTransform.Find("EndPosition").position);
+
+        }
     }
 }
