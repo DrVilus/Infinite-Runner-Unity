@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6003674702589708537}
   - component: {fileID: 6793804525013004150}
   - component: {fileID: 3757707544418505570}
+  - component: {fileID: 769527880612952305}
   m_Layer: 0
   m_Name: Health Pack
   m_TagString: Untagged
@@ -109,3 +110,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.6, y: 2.4}
   m_EdgeRadius: 0
+--- !u!114 &769527880612952305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3757707544418505569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6a3acc7a9f09e245b9e0c268f23e0d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
