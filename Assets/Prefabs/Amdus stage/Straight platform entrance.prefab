@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1396831307769531009}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EnemySpawn 2
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
@@ -39,7 +39,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 102561699888313630}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EndPosition
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
@@ -69,7 +69,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7941426703146016001}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EnemySpawn
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
@@ -100,7 +100,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6487638574335102612}
   - component: {fileID: 6487638574335102613}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Grid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -148,7 +148,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6487638575329790425}
   - component: {fileID: 6487638575329790426}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Straight platform entrance
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -186,7 +186,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11d3a0547d90e9540bf6c166e94998ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Enemy1: {fileID: 3010568515498546323, guid: f26804867b6980041a495a4dd6233e88, type: 3}
+  Enemy1: {fileID: 3010568515498546323, guid: 6398f91a998af734780d7cbf3dd16917, type: 3}
   SpawnPoint1: {fileID: 7941426703146016001}
   SpawnPoint2: {fileID: 1396831307769531009}
   crystal: {fileID: 7675502405606440749, guid: c9216a4fc26d4bb47baa3688f7da101f, type: 3}
@@ -200,7 +200,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4192154839518320827}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CrystalSpawn
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}

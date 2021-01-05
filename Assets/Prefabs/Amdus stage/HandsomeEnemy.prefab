@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3010568515498546323}
   - component: {fileID: 3010568515498546324}
-  - component: {fileID: 4109706899339589991}
   - component: {fileID: 1153168608807219194}
   - component: {fileID: 7980313101741409137}
+  - component: {fileID: 1014678113868380851}
   m_Layer: 0
   m_Name: HandsomeEnemy
   m_TagString: Untagged
@@ -85,19 +85,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &4109706899339589991
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3010568515498546325}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 223a309926fce3c4794b640cf966070e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 200
 --- !u!50 &1153168608807219194
 Rigidbody2D:
   serializedVersion: 4
@@ -129,7 +116,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.06442261, y: -0.027780652}
@@ -145,3 +132,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 11.578444, y: 4.8274107}
   m_EdgeRadius: 0
+--- !u!114 &1014678113868380851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3010568515498546325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c747eea68b0e4f4d9ace323652c93be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 200

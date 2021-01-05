@@ -22,6 +22,7 @@ public class PlayerControl : MonoBehaviour
         boxCollider2d = transform.GetComponent<BoxCollider2D>();
         start_X_position = this.gameObject.transform.position.x;
         playerAnimation = this.transform.GetChild(0).GetComponent<Animator>();
+        GlobalSettings.speed = GlobalSettings.normal_speed;
     }
 
     // Update is called once per frame
@@ -79,8 +80,11 @@ public class PlayerControl : MonoBehaviour
     }
 
     void fixPosition(){
+        if(this.gameObject.transform.position.x < start_X_position-10){
+            transform.Translate(Vector3.right * Time.deltaTime * 50);
+        }
         if(this.gameObject.transform.position.x < start_X_position){
-            transform.Translate(Vector3.right * Time.deltaTime * 5);
+            transform.Translate(Vector3.right * Time.deltaTime * 20);
         }
     }
 

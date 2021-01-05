@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1371428402302710964}
   - component: {fileID: 1371428402302710965}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Grid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57,7 +57,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1371428403438728185}
   - component: {fileID: 1570029090376843797}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Portal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -113,7 +113,7 @@ GameObject:
   - component: {fileID: 2525142570435509809}
   - component: {fileID: 433618238583340697}
   - component: {fileID: 6607978343861716703}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Portal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -223,6 +223,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7f71698212a9504b87c7d86c776e4ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scene_number: 4
 --- !u!1 &7714749123757220498
 GameObject:
   m_ObjectHideFlags: 0
@@ -233,7 +234,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1305354858574544337}
   - component: {fileID: 146578282827987018}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Grid (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -280,7 +281,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8762766054852270629}
   - component: {fileID: 3553829107581043632}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Grid (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -326,7 +327,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3029718475593268011}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CrystalSpawn
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
@@ -356,7 +357,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5218736722704650046}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EndPosition
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}

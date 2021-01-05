@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8613497325839229089}
   - component: {fileID: 3212545461313157148}
   - component: {fileID: 849770565603255970}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: amdusciaplat_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}

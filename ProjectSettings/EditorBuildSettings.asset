@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/WopalMap.unity
     guid: 6c7d8a3e15038d047a38acfa1533423e
+  - enabled: 1
+    path: Assets/Scenes/amduscia.unity
+    guid: 8b0753e0fad599c4caaeeea453736e20
   m_configObjects: {}

@@ -154,7 +154,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4d2bd8f0a915e04ba15c722a1d881e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Enemy1: {fileID: 3010568515498546323, guid: f26804867b6980041a495a4dd6233e88, type: 3}
+  Enemy1: {fileID: 3010568515498546323, guid: 5b4898d1c2eb3a644bc401ac653f913d, type: 3}
   SpawnPoint: {fileID: 8826154781717693394}
 --- !u!1001 &4147197586339066
 PrefabInstance:
