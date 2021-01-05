@@ -32,6 +32,9 @@ public class BasicEnemyScript : MonoBehaviour
                 GlobalSettings.speed=GlobalSettings.normal_speed;
             }else{
                 GlobalSettings.score-=50;
+                   if(GlobalSettings.score<0){
+                    GlobalSettings.score=0;
+                }
                 GlobalSettings.currentHealth-=damage;
             }
         }

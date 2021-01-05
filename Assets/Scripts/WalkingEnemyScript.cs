@@ -29,9 +29,13 @@ public class WalkingEnemyScript : MonoBehaviour
             if(GlobalSettings.kicked==true){
                 GlobalSettings.slideEnabled=false;
                 GlobalSettings.score+=30;
+                
                 GlobalSettings.speed-=GlobalSettings.panelSpeedBoost;
             }else{
                 GlobalSettings.score-=50;
+                if(GlobalSettings.score<0){
+                    GlobalSettings.score=0;
+                }
                 GlobalSettings.currentHealth-=damage;
             }
         }

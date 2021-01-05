@@ -7,11 +7,18 @@ public class Scenemanager : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject htp;
+    public GameObject kickn;
+    public GameObject crd;
     void Start()
     {
         GlobalSettings.currentHealth=GlobalSettings.maxHealth;
         GlobalSettings.currentStamina=GlobalSettings.maxStamina;
         GlobalSettings.score = 0;
+         if(GlobalSettings.kickready==true){
+       kickn.SetActive(true);
+        }else   if(GlobalSettings.kickready==false){
+       kickn.SetActive(false);
+        }
     }
     public void stage1(){
         SceneManager.LoadScene(1);
@@ -30,6 +37,15 @@ public class Scenemanager : MonoBehaviour
     {
         htp.SetActive(false);
     }
+       public void crdopenwindow()
+    {
+       crd.SetActive(true);
+    }
+    public void crdclosewindow()
+    {
+        crd.SetActive(false);
+    }
+  
     // Update is called once per frame
     void Update()
     {

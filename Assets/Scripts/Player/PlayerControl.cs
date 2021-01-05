@@ -58,11 +58,12 @@ public class PlayerControl : MonoBehaviour
         if(Input.GetKeyDown("p")){
             SceneManager.LoadScene(0);
         }
-        if(GlobalSettings.kickready==true){
+        if(GlobalSettings.kickready==true&&isJumping==false){
             if(Input.GetMouseButton(0)){
                 playerAnimation.SetBool("isSliding",true);
                 playerAnimation.SetBool("Stand",false);
                 GlobalSettings.kicked=true;
+                 
                 kickflag = StartCoroutine(Slidekick()); 
             }
         }
@@ -73,6 +74,7 @@ public class PlayerControl : MonoBehaviour
                 playerAnimation.SetBool("Stand",true);
                 GlobalSettings.kicked=false;
                 GlobalSettings.kickready=false;
+                GlobalSettings.speed=GlobalSettings.normal_speed;
     }
     void FixedUpdate()
     {
@@ -104,21 +106,21 @@ public class PlayerControl : MonoBehaviour
       //Variable Jump Height
         if(Input.GetButton("Jump") && isJumping==true){
             if(jumpTimeCounter>0){
-                rigidbody2d.velocity = Vector2.up * JumpVelocity;
+                rigidbody2d.velocity = Vector2.up * JumpVelocity*1.2f;
                 jumpTimeCounter -=Time.deltaTime;
                 fallSpeedTrig = true;
             }
         }
 
         if(touchCheck(Vector2.up,0.2f) && isJumping == true){//Is Head hitted?
-            rigidbody2d.velocity= new Vector2(0,0);
+            rigidbody2d.velocity= new Vector2(0,0)*1.7f;
             fallSpeedTrig=false;
             isJumping = false;
         }else 
         if(Input.GetButtonUp("Jump")){//Is Jump button reelased?
             if(fallSpeedTrig==true && isJumping == true){
                 if(rigidbody2d.velocity.y>4){
-                    rigidbody2d.velocity= new Vector2(0,4);
+                    rigidbody2d.velocity= new Vector2(0,4)*1.7f;
                 }
                 
             }

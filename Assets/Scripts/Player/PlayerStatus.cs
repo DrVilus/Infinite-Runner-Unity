@@ -68,7 +68,7 @@ public class PlayerStatus : MonoBehaviour
         staminaText.text = "Stamina = " + GlobalSettings.currentStamina;
         staminaSlider.value = GlobalSettings.currentStamina/GlobalSettings.maxStamina;
 
-        slideText.text = "Slider " + GlobalSettings.slideEnabled;
+        //slideText.text = "Slider " + GlobalSettings.slideEnabled;
 
         score.text = "Score = " + GlobalSettings.score;
       

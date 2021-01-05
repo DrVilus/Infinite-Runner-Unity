@@ -29,12 +29,11 @@ public class DashPanel : MonoBehaviour
             Destroy(this.gameObject);
             GlobalSettings.currentStamina += 65;
             GlobalSettings.kickready = true;
-            if (GlobalSettings.slideEnabled == false)
-            {
+           
                 GlobalSettings.speed += GlobalSettings.panelSpeedBoost;
-            }
-            GlobalSettings.slideEnabled = true;
-            GlobalSettings.currentStamina += 55;
+            
+       
+            
             if (GlobalSettings.currentStamina > GlobalSettings.maxStamina)
             {
                 GlobalSettings.currentStamina = GlobalSettings.maxStamina;
