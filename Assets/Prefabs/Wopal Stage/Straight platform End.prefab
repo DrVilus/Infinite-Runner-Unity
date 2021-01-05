@@ -262,6 +262,18 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3276728757024311372, guid: 60194e8399714f248946bd90fad229ef, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.0011100769
+      objectReference: {fileID: 0}
+    - target: {fileID: 3276728757024311372, guid: 60194e8399714f248946bd90fad229ef, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.62809545
+      objectReference: {fileID: 0}
+    - target: {fileID: 3276728757024311372, guid: 60194e8399714f248946bd90fad229ef, type: 3}
+      propertyPath: m_Size.y
+      value: 0.52160203
+      objectReference: {fileID: 0}
     - target: {fileID: 7872340309930354861, guid: 60194e8399714f248946bd90fad229ef, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.57
@@ -514,7 +526,7 @@ PrefabInstance:
       objectReference: {fileID: -8124162972221386295, guid: f3d89cf3c04b8a242b25cc8b67ee3c32, type: 3}
     - target: {fileID: 3276728757024311372, guid: 60194e8399714f248946bd90fad229ef, type: 3}
       propertyPath: m_Offset.x
-      value: -0.45088166
+      value: -0.45088172
       objectReference: {fileID: 0}
     - target: {fileID: 3276728757024311372, guid: 60194e8399714f248946bd90fad229ef, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
@@ -527,6 +539,14 @@ PrefabInstance:
     - target: {fileID: 3276728757024311372, guid: 60194e8399714f248946bd90fad229ef, type: 3}
       propertyPath: m_Size.x
       value: 4.351601
+      objectReference: {fileID: 0}
+    - target: {fileID: 3276728757024311372, guid: 60194e8399714f248946bd90fad229ef, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.6462543
+      objectReference: {fileID: 0}
+    - target: {fileID: 3276728757024311372, guid: 60194e8399714f248946bd90fad229ef, type: 3}
+      propertyPath: m_Size.y
+      value: 0.4852843
       objectReference: {fileID: 0}
     - target: {fileID: 7872340309930354861, guid: 60194e8399714f248946bd90fad229ef, type: 3}
       propertyPath: m_LocalPosition.x

@@ -335,13 +335,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5639043747381548810}
     m_Modifications:
+    - target: {fileID: 849770565603255970, guid: 11796db3541efba4db2efe4faf1475b1, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.60942614
+      objectReference: {fileID: 0}
+    - target: {fileID: 849770565603255970, guid: 11796db3541efba4db2efe4faf1475b1, type: 3}
+      propertyPath: m_Size.y
+      value: 0.7030966
+      objectReference: {fileID: 0}
     - target: {fileID: 2066842762096184375, guid: 11796db3541efba4db2efe4faf1475b1, type: 3}
       propertyPath: m_Name
       value: amdusciaplat_2 (3)
       objectReference: {fileID: 0}
     - target: {fileID: 8613497325839229089, guid: 11796db3541efba4db2efe4faf1475b1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.37
+      value: 4.61
       objectReference: {fileID: 0}
     - target: {fileID: 8613497325839229089, guid: 11796db3541efba4db2efe4faf1475b1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -407,11 +415,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 849770565603255970, guid: 11796db3541efba4db2efe4faf1475b1, type: 3}
       propertyPath: m_Offset.y
-      value: -0.5987839
+      value: 0.5250004
       objectReference: {fileID: 0}
     - target: {fileID: 849770565603255970, guid: 11796db3541efba4db2efe4faf1475b1, type: 3}
       propertyPath: m_Size.y
-      value: 2.9127426
+      value: 0.70881355
       objectReference: {fileID: 0}
     - target: {fileID: 2066842762096184375, guid: 11796db3541efba4db2efe4faf1475b1, type: 3}
       propertyPath: m_Name
@@ -427,7 +435,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8613497325839229089, guid: 11796db3541efba4db2efe4faf1475b1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 11.76
+      value: 10.000002
       objectReference: {fileID: 0}
     - target: {fileID: 8613497325839229089, guid: 11796db3541efba4db2efe4faf1475b1, type: 3}
       propertyPath: m_LocalPosition.y

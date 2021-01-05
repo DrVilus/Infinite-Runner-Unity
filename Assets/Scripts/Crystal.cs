@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -29,7 +29,7 @@ public class Crystal : MonoBehaviour
             //     GlobalSettings.currentHealth += 200;
             //}
                         if(GlobalSettings.currentStamina<GlobalSettings.maxStamina){
-                        GlobalSettings.currentStamina +=15;
+                        GlobalSettings.currentStamina +=10;
                         if(GlobalSettings.currentStamina>GlobalSettings.maxStamina){
                         GlobalSettings.currentStamina = GlobalSettings.maxStamina;
                                                }

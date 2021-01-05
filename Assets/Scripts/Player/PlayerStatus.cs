@@ -30,9 +30,9 @@ public class PlayerStatus : MonoBehaviour
     {
         updateUI();
          
- if(GlobalSettings.currentHealth==0){
+ if(GlobalSettings.currentHealth<=0){
         SceneManager.LoadScene(2);
-    }else if(GlobalSettings.currentStamina==0){
+    }else if(GlobalSettings.currentStamina<=0){
         SceneManager.LoadScene(2);
 }else if(transform.position.y < -3.5){
             SceneManager.LoadScene(2);
