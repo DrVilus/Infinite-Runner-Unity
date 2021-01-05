@@ -11,6 +11,7 @@ public class StraightGround : MonoBehaviour
     [SerializeField] private Transform crystal = null;
     [SerializeField] private Transform SpawnPoint = null;
     [SerializeField] private Transform CrystalSpawnPoint = null;
+    [SerializeField] private Transform healthPack = null;
     void Start()
     {
         if(Random.value < 0.5f){
@@ -21,6 +22,8 @@ public class StraightGround : MonoBehaviour
 
         if(Random.value < 0.9f){
             Instantiate(crystal,CrystalSpawnPoint.position, Quaternion.identity);
+        }else{
+            Instantiate(healthPack,CrystalSpawnPoint.position, Quaternion.identity);
         }
 
     }

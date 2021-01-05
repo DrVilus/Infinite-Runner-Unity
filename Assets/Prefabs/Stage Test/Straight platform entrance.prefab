@@ -739,6 +739,7 @@ MonoBehaviour:
   SpawnPoint2: {fileID: 1396831307769531009}
   crystal: {fileID: 7675502405606440749, guid: c9216a4fc26d4bb47baa3688f7da101f, type: 3}
   CrystalSpawnPoint: {fileID: 4192154839518320827}
+  healthPack: {fileID: 6003674702589708537, guid: 1bf9ff5399e73684190213f0dc9e8305, type: 3}
 --- !u!1 &6537952730895787171
 GameObject:
   m_ObjectHideFlags: 0

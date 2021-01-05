@@ -187,6 +187,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy1: {fileID: 3010568515498546323, guid: 6398f91a998af734780d7cbf3dd16917, type: 3}
   SpawnPoint: {fileID: 8826154781717693394}
+  healthPack: {fileID: 6003674702589708537, guid: 1bf9ff5399e73684190213f0dc9e8305, type: 3}
 --- !u!1001 &451908747292604144
 PrefabInstance:
   m_ObjectHideFlags: 0

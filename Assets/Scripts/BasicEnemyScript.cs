@@ -29,7 +29,7 @@ public class BasicEnemyScript : MonoBehaviour
             if(GlobalSettings.kicked==true){
                 GlobalSettings.slideEnabled=false;
                 GlobalSettings.score+=30;
-                GlobalSettings.speed-=GlobalSettings.panelSpeedBoost;
+                GlobalSettings.speed=GlobalSettings.normal_speed;
             }else{
                 GlobalSettings.score-=50;
                 GlobalSettings.currentHealth-=damage;

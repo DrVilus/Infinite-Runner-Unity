@@ -9,6 +9,7 @@ public class StraightPlatformEntrance : MonoBehaviour
     [SerializeField] private Transform SpawnPoint2 = null;
     [SerializeField] private Transform crystal = null;
     [SerializeField] private Transform CrystalSpawnPoint = null;
+    [SerializeField] private Transform healthPack = null;
     void Start()
     {
         if(Random.value < 0.5f){
@@ -22,6 +23,8 @@ public class StraightPlatformEntrance : MonoBehaviour
 
         if(Random.value < 0.9f){
             Instantiate(crystal,CrystalSpawnPoint.position, Quaternion.identity);
+        }else{
+            Instantiate(healthPack,CrystalSpawnPoint.position, Quaternion.identity);
         }
     }
 

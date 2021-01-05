@@ -7,6 +7,7 @@ public class StraightPlatformEnd : MonoBehaviour
     // Start is called before the first frame update
     [SerializeField] private Transform Enemy1 = null;
     [SerializeField] private Transform SpawnPoint = null;
+    [SerializeField] private Transform healthPack = null;
     void Start()
     {
         var myBool = (Random.value < 0.5f);

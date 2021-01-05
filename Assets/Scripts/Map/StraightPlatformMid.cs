@@ -12,6 +12,7 @@ public class StraightPlatformMid : MonoBehaviour
     [SerializeField] private Transform crystal = null;
     [SerializeField] private Transform CrystalSpawnPoint1 = null;
     [SerializeField] private Transform CrystalSpawnPoint2 = null;
+    [SerializeField] private Transform healthPack = null;
     void Start()
     {
         var myBool = (Random.value < 0.5f);
@@ -30,10 +31,14 @@ public class StraightPlatformMid : MonoBehaviour
 
         if(Random.value < 0.9f){
             Instantiate(crystal,CrystalSpawnPoint1.position, Quaternion.identity);
+        }else{
+            Instantiate(healthPack,CrystalSpawnPoint1.position, Quaternion.identity);
         }
 
         if(Random.value < 0.9f){
             Instantiate(crystal,CrystalSpawnPoint2.position, Quaternion.identity);
+        }else{
+            Instantiate(healthPack,CrystalSpawnPoint2.position, Quaternion.identity);
         }
     }
 
