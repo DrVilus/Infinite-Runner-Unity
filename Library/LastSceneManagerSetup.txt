@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/NaberiusMap.unity
+- path: Assets/Scenes/amduscia.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
