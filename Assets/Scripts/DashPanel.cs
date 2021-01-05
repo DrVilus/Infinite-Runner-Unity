@@ -25,12 +25,18 @@ public class DashPanel : MonoBehaviour
         if(other.gameObject.tag == "Player"){
             Debug.Log("Player got hit");
             Destroy(this.gameObject);
-            GlobalSettings.currentStamina = GlobalSettings.maxStamina;
+            GlobalSettings.currentStamina +=65;
+            GlobalSettings.kickready = true;
             if(GlobalSettings.slideEnabled == false){
                 GlobalSettings.speed+=GlobalSettings.panelSpeedBoost;
             }
             GlobalSettings.slideEnabled = true;
-            GlobalSettings.score+=50;
+                          if(GlobalSettings.currentStamina<GlobalSettings.maxStamina){}
+                        GlobalSettings.currentStamina +=55;
+                          if(GlobalSettings.currentStamina>GlobalSettings.maxStamina){
+                        GlobalSettings.currentStamina = GlobalSettings.maxStamina;
+                                               }
+        }
         }
     }
-}
+

@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class Scenemanager : MonoBehaviour
 {
     // Start is called before the first frame update
+    public GameObject htp;
     void Start()
     {
         GlobalSettings.currentHealth=GlobalSettings.maxHealth;
@@ -20,6 +21,14 @@ public class Scenemanager : MonoBehaviour
     }
     public void exitapp(){
         Application.Quit();
+    }
+      public void htpopenwindow()
+    {
+       htp.SetActive(true);
+    }
+    public void htpclosewindow()
+    {
+        htp.SetActive(false);
     }
     // Update is called once per frame
     void Update()

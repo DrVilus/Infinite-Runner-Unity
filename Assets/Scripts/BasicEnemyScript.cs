@@ -26,11 +26,12 @@ public class BasicEnemyScript : MonoBehaviour
         if(other.gameObject.tag == "Player"){
             Debug.Log("Player got hit");
             Destroy(this.gameObject);
-            if(GlobalSettings.slideEnabled){
+            if(GlobalSettings.kicked==true){
                 GlobalSettings.slideEnabled=false;
-                GlobalSettings.score+=100;
+                GlobalSettings.score+=30;
                 GlobalSettings.speed-=GlobalSettings.panelSpeedBoost;
             }else{
+                GlobalSettings.score-=50;
                 GlobalSettings.currentHealth-=damage;
             }
         }

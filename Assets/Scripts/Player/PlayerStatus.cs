@@ -34,6 +34,9 @@ public class PlayerStatus : MonoBehaviour
         SceneManager.LoadScene(2);
     }else if(GlobalSettings.currentStamina==0){
         SceneManager.LoadScene(2);
+}else if(transform.position.y < -3.5){
+            SceneManager.LoadScene(2);
+
 }
     
     }
@@ -73,6 +76,6 @@ public class PlayerStatus : MonoBehaviour
     
     }
     void staminaReduce(){
-        GlobalSettings.currentStamina -= 0.03f;
+        GlobalSettings.currentStamina -= 0.08f;
     }
 }

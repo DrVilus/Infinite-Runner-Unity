@@ -15,6 +15,7 @@ public class PlayerControl : MonoBehaviour
     private double start_X_position = 0;
     private Animator playerAnimation;
 
+    private Coroutine kickflag;
     void Start()
     {
         rigidbody2d = transform.GetComponent<Rigidbody2D>();
@@ -42,13 +43,36 @@ public class PlayerControl : MonoBehaviour
         if(touchCheck(Vector2.down, 0.1f)){
             playerAnimation.SetBool("inAir",false);
         }
+             if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (Time.timeScale != 0)
+            {
+                Time.timeScale = 0;
+                
+            }else if(Time.timeScale ==0){
+                Time.timeScale = 1;
+            }
 
+        }
         if(Input.GetKeyDown("p")){
             SceneManager.LoadScene(0);
         }
-        
+        if(GlobalSettings.kickready==true){
+            if(Input.GetMouseButton(0)){
+                playerAnimation.SetBool("isSliding",true);
+                playerAnimation.SetBool("Stand",false);
+                GlobalSettings.kicked=true;
+                kickflag = StartCoroutine(Slidekick()); 
+            }
+        }
     }
-
+    private IEnumerator Slidekick(){
+        yield return new WaitForSeconds(0.5f);
+        playerAnimation.SetBool("isSliding",false);
+                playerAnimation.SetBool("Stand",true);
+                GlobalSettings.kicked=false;
+                GlobalSettings.kickready=false;
+    }
     void FixedUpdate()
     {
         

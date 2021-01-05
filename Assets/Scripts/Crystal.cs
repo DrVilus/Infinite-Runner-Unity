@@ -24,10 +24,19 @@ public class Crystal : MonoBehaviour
     {
         if(other.gameObject.tag == "Player"){
             Destroy(this.gameObject);
-            GlobalSettings.score+=10;
-            if(GlobalSettings.currentHealth < GlobalSettings.maxHealth){
-                GlobalSettings.currentHealth += 200;
-            }
+            GlobalSettings.score+=15;
+            // if(GlobalSettings.currentHealth < GlobalSettings.maxHealth){
+            //     GlobalSettings.currentHealth += 200;
+            //}
+                        if(GlobalSettings.currentStamina<GlobalSettings.maxStamina){
+                        GlobalSettings.currentStamina +=15;
+                        if(GlobalSettings.currentStamina>GlobalSettings.maxStamina){
+                        GlobalSettings.currentStamina = GlobalSettings.maxStamina;
+                                               }
+        }
+                        
+        }
         }
     }
-}
+
+    

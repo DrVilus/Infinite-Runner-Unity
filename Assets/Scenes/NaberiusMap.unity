@@ -289,7 +289,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Press Space key to Jump!
+  m_text: 'Press Esc to pause and unpause!
 
     Press P key to return to main menu'
   m_isRightToLeft: 0

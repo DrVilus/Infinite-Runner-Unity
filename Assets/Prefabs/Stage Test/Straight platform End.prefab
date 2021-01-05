@@ -96,7 +96,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.18856716, y: -1.2666662}
+  m_Offset: {x: 0.18856716, y: -0.5104768}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -107,7 +107,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 6.432865, y: 2.30551}
+  m_Size: {x: 6.432865, y: 0.79313135}
   m_EdgeRadius: 0
 --- !u!1 &2943596567085723539
 GameObject:
@@ -691,7 +691,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.18856716, y: -1.2666662}
+  m_Offset: {x: 0.18856716, y: -0.5104759}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -702,7 +702,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 6.432865, y: 2.30551}
+  m_Size: {x: 6.432865, y: 0.79312944}
   m_EdgeRadius: 0
 --- !u!1001 &3208687927253868331
 PrefabInstance:
@@ -783,7 +783,7 @@ PrefabInstance:
       objectReference: {fileID: -2428136470888647700, guid: 32f30358a6e318349a3065bf13897c59, type: 3}
     - target: {fileID: 3276728757024311372, guid: 60194e8399714f248946bd90fad229ef, type: 3}
       propertyPath: m_Offset.y
-      value: -1.0494125
+      value: -0.09259188
       objectReference: {fileID: 0}
     - target: {fileID: 3276728757024311372, guid: 60194e8399714f248946bd90fad229ef, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
@@ -795,11 +795,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3276728757024311372, guid: 60194e8399714f248946bd90fad229ef, type: 3}
       propertyPath: m_Size.y
-      value: 2.7400174
+      value: 0.8263763
       objectReference: {fileID: 0}
     - target: {fileID: 3276728757024311372, guid: 60194e8399714f248946bd90fad229ef, type: 3}
       propertyPath: m_Offset.x
-      value: 0.00896275
+      value: 0.008962631
       objectReference: {fileID: 0}
     - target: {fileID: 3276728757024311372, guid: 60194e8399714f248946bd90fad229ef, type: 3}
       propertyPath: m_Size.x
