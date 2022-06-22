@@ -10,8 +10,8 @@
   ],
   "category": "2D",
   "dependencies": {
-    "com.unity.2d.sprite": "1.0.0",
-    "com.unity.modules.uielements": "1.0.0"
+    //"com.unity.2d.sprite": "1.0.0",
+    //"com.unity.modules.uielements": "1.0.0"
   },
   "relatedPackages": {
     "com.unity.2d.common.tests": "3.0.1"
